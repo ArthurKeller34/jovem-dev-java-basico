@@ -1,4 +1,4 @@
-package aula2.poo.exercicio1;
+package aula2.poo.exercicio3;
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;

@@ -18,9 +18,11 @@ public class Exercicio3 extends Pessoa{
 		Iterator<Pessoa> removeNome = pessoas.iterator();
 		while (removeNome.hasNext()) {
 			Pessoa pessoa = removeNome.next();
-			if ()
-
+			pessoas.removeIf(e-> pessoa.getNome().startsWith("T") && pessoa.getNome().endsWith("o")); {
+				pessoas.removeIf(e -> pessoa.remove(n
 			}
+			}
+	
 
 		}
 

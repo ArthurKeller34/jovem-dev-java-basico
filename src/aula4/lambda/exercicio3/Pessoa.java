@@ -10,10 +10,12 @@ public class Pessoa {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
+
 	@Override
-    public String toString() {
-        return nome;
+	public String toString() {
+		return "Pessoa [nome=" + nome + "]";
 	}
+
 
 
 }	

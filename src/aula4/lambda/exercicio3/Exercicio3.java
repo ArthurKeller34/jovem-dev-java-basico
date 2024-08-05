@@ -1,10 +1,9 @@
 package aula4.lambda.exercicio3;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
-public class Exercicio3 extends Pessoa{
+public class Exercicio3 extends Pessoa {
 
 	public static void main(String[] args) {
 		List<Pessoa> pessoas = new ArrayList<>();
@@ -13,18 +12,9 @@ public class Exercicio3 extends Pessoa{
 			Pessoa pessoa = new Pessoa();
 			pessoa.setNome(nomes[i]);
 			pessoas.add(pessoa);
-			
 		}
-		Iterator<Pessoa> removeNome = pessoas.iterator();
-		while (removeNome.hasNext()) {
-			Pessoa pessoa = removeNome.next();
-			pessoas.removeIf(e-> pessoa.getNome().startsWith("T") && pessoa.getNome().endsWith("o")); {
-				pessoas.removeIf(e -> pessoa.remove(n
-			}
-			}
-	
-
-		}
-
+		pessoas.removeIf((p -> p.getNome().startsWith("T") && p.getNome().endsWith("o")));
+		System.out.println(pessoas);
 	}
 
+}

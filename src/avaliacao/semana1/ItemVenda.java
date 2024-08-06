@@ -2,14 +2,14 @@ package avaliacao.semana1;
 
 public class ItemVenda {
 
-	private String itensVenda;
+	private int quantidadeComprada;
 
-	public String getItensVenda() {
-		return itensVenda;
+	public int getQuantidadeComprada() {
+		return quantidadeComprada;
 	}
 
-	public void setItensVenda(String itensVenda) {
-		this.itensVenda = itensVenda;
+	public void setQuantidadeComprada(int quantidadeComprada) {
+		this.quantidadeComprada = quantidadeComprada;
 	}
 	
 	

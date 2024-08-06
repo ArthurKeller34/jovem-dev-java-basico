@@ -22,11 +22,11 @@ public class Principal {
 		listaCliente.add(cliente);
 		List<Produto> listaDeProdutos = new ArrayList<Produto>();
 		while (true) {
-			Produto produto = new Produto();
 			String produtoEscolhidoPeloCliente = JOptionPane.showInputDialog("Qual produto esta levando? (digite fim para sair) ");
 			if (produtoEscolhidoPeloCliente.equals("fim")) { 
 				break;
 			}
+			Produto produto = new Produto();
 			double precoUnidadeProduto = Double.parseDouble(JOptionPane.showInputDialog("Qual o valor da unidade deste produto? "));
 			int quatidadeDoProduto = Integer.parseInt(JOptionPane.showInputDialog("Quantas unidades esta comprando? "));
 			produto.add(produtoEscolhidoPeloCliente);
@@ -35,7 +35,7 @@ public class Principal {
 			listaDeProdutos.add(produto);
 		
 		} 
-		String menuDePagamento = "1 - Cartão de credito" + "\nCartão de debito" + "\nDinheiro";
+		String menuDePagamento = "1 - Cartão de credito" + "\n2 - Cartão de debito" + "\n3 - Dinheiro";
 		int opEscolhida = Integer.parseInt(JOptionPane.showInputDialog(menuDePagamento));
 		switch (opEscolhida) {
 		case 1:

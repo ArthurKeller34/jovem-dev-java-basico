@@ -3,6 +3,8 @@ package aula5.stream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class Exercicio2 {
 
@@ -12,10 +14,10 @@ public class Exercicio2 {
 		for (int i = 0; i < 50; i++) {
 			numeros.add(r.nextInt(101));
 		}
-		for (int numero : numeros) {
-			if (numero > 50) {
-				System.out.println(numero);
-			}
-		}
+		List<Integer> numerosMaiores50 = numeros.stream()
+				.filter(num -> num > 50)
+				.collect(Collectors.toList());
+		System.out.println(numerosMaiores50);
 	}
+
 }
